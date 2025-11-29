@@ -25,5 +25,5 @@ features:
   - rainfall
 
 output:
-  model_dir: "./data/model.pk1"
+  model_dir: "./models/model.pk1"
   processed_data: "./data/malaria_processed.csv"
