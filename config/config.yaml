@@ -1,0 +1,29 @@
+project:
+  name: Climalaria
+  version: 1.0
+
+model:
+  type: random-forest
+  parameters:
+    n_estimators: 300
+    random_state: 42
+
+data:
+  raw: "./data/malaria_raw.csv"
+
+split:
+  test_size: 0.2
+  shuffle: true
+  random_state: 42
+
+target: "total_cases"
+
+features:
+  - month_code
+  - county_code
+  - temp
+  - rainfall
+
+output:
+  model_dir: "./data/model.pk1"
+  processed_data: "./data/malaria_processed.csv"
