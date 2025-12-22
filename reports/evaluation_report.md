@@ -1,4 +1,4 @@
-# Model Performance Evaluation Report (Regression)
+# Model Performance Evaluation Report
 
 ## Error Metrics
 - Mean Absolute Error (MAE): 1955.182
