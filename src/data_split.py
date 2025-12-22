@@ -1,5 +1,9 @@
 from sklearn.model_selection import train_test_split
-from config import load_config
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+from src.config import load_config
 
 class DataSplitError(Exception):
     pass

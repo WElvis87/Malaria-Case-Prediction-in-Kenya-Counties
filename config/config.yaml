@@ -27,3 +27,4 @@ features:
 output:
   model_dir: "./models/model.pk1"
   processed_data: "./data/malaria_processed.csv"
+  evaluation_report: "./reports/evaluation_report.md"

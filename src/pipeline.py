@@ -1,7 +1,7 @@
 from data_loader import load_data
 from data_cleaning import clean_data
 from data_split import split_data
-from model_training import create_model, train_model, evaluate_model, save_model
+from model_training import create_model, train_model, evaluate_model, save_model, create_evaluation_report
 
 def run_pipeline():
     print("=== Starting Climalaria Pipeline ===")
@@ -21,15 +21,16 @@ def run_pipeline():
     model = train_model(model, X_train, y_train)
     print("Model trained.")
 
-    metrics = evaluate_model(model, X_test, y_test)
-    print(f"Evaluation metrics: MAE={metrics['mae']:.2f}, RMSE={metrics['rmse']:.2f}")
+    mae, mse, rmse, r2 = evaluate_model(model, X_test, y_test)
+
+    create_evaluation_report(mae, mse, rmse, r2)
 
     path = save_model(model)
     print(f"Model saved to {path}")
 
     print("=== Pipeline completed ===")
 
-    return model, metrics
+    return model
 
 if __name__ == "__main__":
     run_pipeline()

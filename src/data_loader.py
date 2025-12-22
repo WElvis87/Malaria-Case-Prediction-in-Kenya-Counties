@@ -1,6 +1,10 @@
 import pandas as pd
-from config import load_config
 from pathlib import Path
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+from src.config import load_config
 
 class DataLoaderError(Exception):
     pass
