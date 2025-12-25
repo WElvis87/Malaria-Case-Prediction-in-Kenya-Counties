@@ -42,6 +42,7 @@ Specifically, it:
 It is a decision-support system.
 
 ### 🗂️ Project Structure
+```
 C:.
 │   .gitignore
 │   requirements.txt
@@ -82,6 +83,7 @@ C:.
         test_load_data.py
         test_model_training.py
         __init__.py
+```
 
 ---
 
