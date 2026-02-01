@@ -38,7 +38,7 @@ def evaluate_model(model, X_test, y_test):
 
     return mae, mse, r2, rmse
 
-def create_evaluation_report(mae, mse, rmse, r2, mape=None, residual_summary=None, output_path=None):
+def create_evaluation_report(mae, mse, r2, rmse, mape=None, residual_summary=None, output_path=None):
     config = load_config()
 
     if output_path is None:
