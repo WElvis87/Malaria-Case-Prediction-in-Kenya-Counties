@@ -21,9 +21,9 @@ def run_pipeline():
     model = train_model(model, X_train, y_train)
     print("Model trained.")
 
-    mae, mse, rmse, r2 = evaluate_model(model, X_test, y_test)
+    mae, mse, r2, rmse = evaluate_model(model, X_test, y_test)
 
-    create_evaluation_report(mae, mse, rmse, r2)
+    create_evaluation_report(mae, mse, r2, rmse)
 
     path = save_model(model)
     print(f"Model saved to {path}")
