@@ -136,7 +136,14 @@ Tested on:
 
 ## 📏 Evaluation: How We Know the Model Works
 
-Predictions are evaluated using regression metrics because the model is predicting cases which is a continuous values.
+Sample Evaluation Results from the model.
+|------------------|------------------|
+
+| Mean Absolute Error | 1955.182 |
+| Mean Squared Error | 37179385.451 |
+| Root Mean Squared Error | 6097.490 |
+| R² Score | 0.835 |
+
 
 ### Primary metrics:
 MAE (Mean Absolute Error) – average prediction error
