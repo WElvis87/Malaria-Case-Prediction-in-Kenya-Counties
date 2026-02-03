@@ -137,12 +137,17 @@ Tested on:
 ## 📏 Evaluation: How We Know the Model Works
 
 Sample Evaluation Results from the model.
+
+---
+| Metric | Result |
 |------------------|------------------|
 
 | Mean Absolute Error | 1955.182 |
 | Mean Squared Error | 37179385.451 |
 | Root Mean Squared Error | 6097.490 |
 | R² Score | 0.835 |
+
+---
 
 
 ### Primary metrics:
